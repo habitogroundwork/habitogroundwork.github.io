@@ -9,15 +9,15 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --cream: #F5F1EB;
-    --dark: #1A1814;
-    --mid: #3D3A33;
-    --muted: #7A7568;
-    --accent: #8B6F47;
-    --accent-light: #C4A882;
-    --accent-ultra: #F0E8DC;
-    --line: rgba(139,111,71,0.18);
-    --white: #FDFBF8;
+    --cream: #FAF8F5;
+    --dark: #0F0E0C;
+    --mid: #0F0E0C;
+    --muted: #3A3630;
+    --accent: #7A5C35;
+    --accent-light: #A07848;
+    --accent-ultra: #EDE4D8;
+    --line: rgba(122,92,53,0.2);
+    --white: #FFFFFF;
   }
 
   html { scroll-behavior: smooth; }
@@ -51,7 +51,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(245,241,235,0.88);
+    background: rgba(250,248,245,0.95);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--line);
   }
@@ -125,7 +125,7 @@
 
   .hero-sub {
     font-size: 17px;
-    color: var(--muted);
+    color: var(--mid);
     max-width: 540px;
     line-height: 1.8;
     margin-bottom: 52px;
@@ -162,7 +162,7 @@
   .hero-footnote {
     margin-top: 20px;
     font-size: 12px;
-    color: var(--muted);
+    color: var(--mid);
     letter-spacing: 0.03em;
   }
 
@@ -192,7 +192,7 @@
     font-weight: 500;
     letter-spacing: 0.22em;
     text-transform: uppercase;
-    color: var(--accent-light);
+    color: var(--accent);
     margin-bottom: 20px;
   }
 
@@ -269,6 +269,13 @@
     padding: 100px 0;
     background: var(--accent-ultra);
   }
+  .results * {
+    color: #000000 !important;
+  }
+  .results h2 em {
+    font-style: italic;
+    color: #7A5C35 !important;
+  }
 
   .results h2 {
     font-family: 'Cormorant Garamond', serif;
@@ -280,6 +287,7 @@
   }
 
   .results h2 em { font-style: italic; color: var(--accent); }
+  .results .section-label { color: var(--accent); }
 
   .results-list {
     display: flex;
@@ -301,7 +309,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-size: 28px;
     font-weight: 300;
-    color: var(--accent-light);
+    color: var(--accent);
     line-height: 1;
     flex-shrink: 0;
     min-width: 28px;
@@ -310,14 +318,14 @@
 
   .result-text {
     font-size: 16px;
-    color: var(--mid);
+    color: #000000;
     line-height: 1.7;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   .result-text strong {
-    color: var(--dark);
-    font-weight: 500;
+    color: #000000;
+    font-weight: 600;
   }
 
   @media (max-width: 768px) {
@@ -350,7 +358,7 @@
 
   .pain-text {
     font-size: 16px;
-    color: var(--mid);
+    color: var(--dark);
     line-height: 1.8;
     font-weight: 300;
   }
@@ -418,7 +426,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-size: 56px;
     font-weight: 300;
-    color: var(--accent-light);
+    color: var(--accent);
     line-height: 1;
     margin-bottom: 20px;
   }
@@ -433,7 +441,7 @@
 
   .step p {
     font-size: 15px;
-    color: var(--muted);
+    color: var(--dark);
     line-height: 1.75;
     font-weight: 300;
   }
@@ -474,7 +482,7 @@
 
   .testi-before {
     font-size: 13px;
-    color: rgba(245,241,235,0.5);
+    color: #C8BFB3;
     font-weight: 300;
     line-height: 1.6;
     margin-bottom: 10px;
@@ -494,14 +502,14 @@
     font-size: 17px;
     font-weight: 300;
     font-style: italic;
-    color: var(--cream);
+    color: #FAF8F5;
     line-height: 1.7;
     margin-bottom: 18px;
   }
 
   .testi-result {
     font-size: 13px;
-    color: rgba(245,241,235,0.45);
+    color: #C8BFB3;
     font-weight: 300;
     line-height: 1.6;
   }
@@ -541,7 +549,7 @@
     padding: 16px 0;
     border-bottom: 1px solid var(--line);
     font-size: 14px;
-    color: var(--mid);
+    color: var(--dark);
     font-weight: 300;
   }
   .stat-list li:first-child { border-top: 1px solid var(--line); }
@@ -549,13 +557,13 @@
     font-family: 'Cormorant Garamond', serif;
     font-size: 30px;
     font-weight: 300;
-    color: var(--accent);
+    color: var(--dark);
     white-space: nowrap;
   }
 
   .authority-text p {
     font-size: 16px;
-    color: var(--mid);
+    color: var(--dark);
     line-height: 1.85;
     font-weight: 300;
     margin-bottom: 18px;
@@ -581,7 +589,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-size: 72px;
     font-weight: 300;
-    color: var(--accent-light);
+    color: var(--accent);
     text-align: center;
     line-height: 1;
   }
@@ -596,7 +604,7 @@
 
   .guarantee p {
     font-size: 15px;
-    color: var(--muted);
+    color: var(--mid);
     line-height: 1.8;
     font-weight: 300;
   }
@@ -632,14 +640,14 @@
     font-size: 18px;
     font-weight: 600;
     font-style: italic;
-    color: var(--accent);
+    color: var(--dark);
     margin-bottom: 16px;
     line-height: 1.4;
   }
 
   .obj-a {
     font-size: 15px;
-    color: var(--muted);
+    color: var(--mid);
     line-height: 1.8;
     font-weight: 300;
   }
@@ -669,7 +677,7 @@
 
   .final-cta p {
     font-size: 16px;
-    color: rgba(245,241,235,0.55);
+    color: #C8BFB3;
     max-width: 440px;
     margin: 0 auto 52px;
     font-weight: 300;
@@ -710,7 +718,7 @@
   .spots-notice {
     margin-top: 32px;
     font-size: 12px;
-    color: rgba(245,241,235,0.35);
+    color: #A09488;
     letter-spacing: 0.08em;
     text-transform: uppercase;
   }
@@ -724,6 +732,7 @@
     font-size: 12px;
     color: rgba(245,241,235,0.25);
     letter-spacing: 0.06em;
+    color: #A09488;
     position: relative;
     z-index: 1;
   }
@@ -757,7 +766,7 @@
 
   .lm-left p {
     font-size: 15px;
-    color: rgba(245,241,235,0.6);
+    color: var(--cream);
     line-height: 1.8;
     font-weight: 300;
     margin-bottom: 16px;
@@ -862,7 +871,7 @@
   }
   .lm-chapters li {
     font-size: 13px;
-    color: var(--muted);
+    color: var(--mid);
     padding: 10px 0;
     border-bottom: 1px solid var(--line);
     font-weight: 300;
@@ -873,7 +882,7 @@
   .lm-chapters li span {
     font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
-    color: var(--accent-light);
+    color: var(--accent);
     font-weight: 300;
     min-width: 24px;
   }
@@ -885,7 +894,7 @@
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--accent);
-    border: 1px solid var(--accent-light);
+    border: 1px solid var(--accent);
     padding: 6px 14px;
   }
 
@@ -957,7 +966,7 @@
 
   .lm-form-note {
     font-size: 11px;
-    color: rgba(245,241,235,0.35);
+    color: #A09488;
     letter-spacing: 0.04em;
   }
 
@@ -1112,24 +1121,24 @@
   <div class="container">
     <div class="method-header">
       <p class="section-label">El Método Groundwork</p>
-      <h2>Un sistema que puedes<br>operar tú solo</h2>
-      <p>Tres pasos. Una sesión. Resultados que se sostienen sin que nadie te esté guiando.</p>
+      <h2 style="color:#000000;">Un sistema que puedes<br>operar tú solo</h2>
+      <p style="color: var(--dark);">Tres pasos. Una sesión. Resultados que se sostienen sin que nadie te esté guiando.</p>
     </div>
     <div class="steps">
       <div class="step">
         <div class="step-num">01</div>
         <h3>Mapear</h3>
-        <p>Analizamos tu semana real — no la ideal. Identificamos qué genera bienestar y qué te desgasta. Este paso solo ya cambia la perspectiva.</p>
+        <p><span style="color: var(--dark);">Analizamos tu semana real — no la ideal. Identificamos qué genera bienestar y qué te desgasta. Este paso solo ya cambia la perspectiva.</span></p>
       </div>
       <div class="step">
         <div class="step-num">02</div>
         <h3>Diagnosticar</h3>
-        <p>Identificamos el obstáculo emocional real. No es pereza. Generalmente es una de cinco formas de incomodidad que evitamos sin darnos cuenta.</p>
+        <p><span style="color: var(--dark);">Identificamos el obstáculo emocional real. No es pereza. Generalmente es una de cinco formas de incomodidad que evitamos sin darnos cuenta.</span></p>
       </div>
       <div class="step">
         <div class="step-num">03</div>
         <h3>Diseñar</h3>
-        <p>Construimos tu hábito con estructura: cuándo exactamente, dónde, por qué importa y qué preparar antes. El hábito deja de depender de la motivación.</p>
+        <p><span style="color: var(--dark);">Construimos tu hábito con estructura: cuándo exactamente, dónde, por qué importa y qué preparar antes. El hábito deja de depender de la motivación.</span></p>
       </div>
     </div>
   </div>
@@ -1145,7 +1154,7 @@
       <div>
         <h3>Si no funciona, sigo contigo sin costo</h3>
         <p>
-          Si después de dos sesiones y 4 semanas de seguimiento no tienes un sistema de hábitos claro, aplicable y que puedas sostener sin ayuda — te doy 3 sesiones adicionales sin ningún costo. Confío en mi metodología. Si mi sistema no te da un marco sólido para que apliques autonomía, tu dinero no me sirve.
+          <span style="color: var(--dark);">Si después de dos sesiones y 4 semanas de seguimiento no tienes un sistema de hábitos claro, aplicable y que puedas sostener sin ayuda — te doy 3 sesiones adicionales sin ningún costo. Confío en mi metodología. Si mi sistema no te da un marco sólido para que apliques autonomía, tu dinero no me sirve.</span>
         </p>
       </div>
     </div>
@@ -1248,13 +1257,13 @@
       </div>
       <div class="authority-text">
         <p>
-          Durante años exploré Gestalt, teatro terapéutico, danza terapia, constelaciones familiares y análisis psicoexistencial. Fui tutor y acompañé a personas en momentos de crisis emocional dentro de esos espacios.
+          <span style="color: var(--dark);">Durante años exploré Gestalt, teatro terapéutico, danza terapia, constelaciones familiares y análisis psicoexistencial. Fui tutor y acompañé a personas en momentos de crisis emocional dentro de esos espacios.</span>
         </p>
         <p>
-          Lo que encontré después de todo ese recorrido es que el 90% de esos enfoques, aunque bien intencionados, generan dependencia y sobreidentificación con la práctica. No autonomía real.
+          <span style="color: var(--dark);">Lo que encontré después de todo ese recorrido es que el 90% de esos enfoques, aunque bien intencionados, generan dependencia y sobreidentificación con la práctica. No autonomía real.</span>
         </p>
         <p>
-          El Método Groundwork nació de mi propia crisis — como intérprete enfrentando llamadas de vida o muerte, con agotamiento extremo. Ningún libro de autoayuda me preparó para eso. Lo que me sostuvo fue entender que tu identidad es el resultado de lo que haces con consistencia — y aprender a diseñar esa intención con un sistema claro.
+          <span style="color: var(--dark);">El Método Groundwork nació de mi propia crisis — como intérprete enfrentando llamadas de vida o muerte, con agotamiento extremo. Ningún libro de autoayuda me preparó para eso. Lo que me sostuvo fue entender que tu identidad es el resultado de lo que haces con consistencia — y aprender a diseñar esa intención con un sistema claro.</span>
         </p>
       </div>
     </div>
@@ -1271,7 +1280,7 @@
       <div>
         <h3>Si no funciona, sigo contigo sin costo</h3>
         <p>
-          Si después de dos sesiones y 4 semanas de seguimiento no tienes un sistema de hábitos claro, aplicable y que puedas sostener sin ayuda — te doy 3 sesiones adicionales sin ningún costo. Confío en mi metodología. Si mi sistema no te da un marco sólido para que apliques autonomía, tu dinero no me sirve.
+          <span style="color: var(--dark);">Si después de dos sesiones y 4 semanas de seguimiento no tienes un sistema de hábitos claro, aplicable y que puedas sostener sin ayuda — te doy 3 sesiones adicionales sin ningún costo. Confío en mi metodología. Si mi sistema no te da un marco sólido para que apliques autonomía, tu dinero no me sirve.</span>
         </p>
       </div>
     </div>
@@ -1285,16 +1294,16 @@
   <div class="container">
     <div class="obj-header">
       <p class="section-label">Dudas frecuentes</p>
-      <h2>Antes de que te vayas</h2>
+      <h2 style="color:#000000;">Antes de que te vayas</h2>
     </div>
     <div class="obj-list">
       <div class="obj-item">
         <div class="obj-q">"Ya hay demasiados coaches que venden humo."</div>
-        <p class="obj-a">Tienes razón — y por eso el Método Groundwork no promete transformación espiritual ni resultados mágicos. Promete un sistema claro que tú puedes operar, ajustar y aplicar por tu cuenta. Si en 4 semanas no tienes ese sistema funcionando, te doy 3 sesiones adicionales sin costo.</p>
+        <p class="obj-a"><span style="color: var(--dark);">Tienes razón — y por eso el Método Groundwork no promete transformación espiritual ni resultados mágicos. Promete un sistema claro que tú puedes operar, ajustar y aplicar por tu cuenta. Si en 4 semanas no tienes ese sistema funcionando, te doy 3 sesiones adicionales sin costo.</span></p>
       </div>
       <div class="obj-item">
         <div class="obj-q">"Está muy barato. ¿Esto sí sirve?"</div>
-        <p class="obj-a">Creo que el conocimiento sobre bienestar y autonomía debe ser accesible. Eso no lo hace menos valioso — le dediqué meses a construir un marco que primero me funcionó a mí. Lo que sí puedo garantizarte es el mismo sistema que ya ha funcionado con personas reales, con seguimiento personalizado.</p>
+        <p class="obj-a"><span style="color: var(--dark);">Creo que el conocimiento sobre bienestar y autonomía debe ser accesible. Eso no lo hace menos valioso — le dediqué meses a construir un marco que primero me funcionó a mí. Lo que sí puedo garantizarte es el mismo sistema que ya ha funcionado con personas reales, con seguimiento personalizado.</span></p>
       </div>
     </div>
   </div>
